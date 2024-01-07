@@ -8,8 +8,9 @@ import {
   Button,
   User,
 } from "@nextui-org/react";
-import { IconList, IconMail, IconPlus, IconStar } from "@tabler/icons-react";
+import { IconList, IconMail, IconPlus, IconStar, IconUser } from "@tabler/icons-react";
 import { useSession } from "next-auth/react";
+import route from "@/lib/route";
 export default function UserMenu() {
   const { data: session } = useSession();
   return (
@@ -46,6 +47,9 @@ export default function UserMenu() {
           }}
         >
           <DropdownSection aria-label="Profile & Actions" showDivider>
+            <DropdownItem href={route.myAccount} endContent={<IconUser size={15} />} key="dashboard">
+              Hesabım
+            </DropdownItem>
             <DropdownItem endContent={<IconList size={15} />} key="dashboard">
               İlanlar
             </DropdownItem>

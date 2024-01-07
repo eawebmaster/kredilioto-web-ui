@@ -18,7 +18,7 @@ const config: Config = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
-      "3xl": "1920px",
+      "3xl": "1600px",
       "4xl": "2560px", // only need to control product grid mode in ultra 4k device
     },
     extend: {

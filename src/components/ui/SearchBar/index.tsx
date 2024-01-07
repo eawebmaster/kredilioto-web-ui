@@ -11,7 +11,7 @@ export default function SearchBar() {
       <Input
         prefix={<MagnifyingGlassIcon className="w-4" />}
         suffix={<ArrowRightIcon className="w-4" />}
-        placeholder="Icons as prefix and suffix"
+        placeholder="Kelime,galeri adı veya ilan no ile ara"
       />
     </>
   );

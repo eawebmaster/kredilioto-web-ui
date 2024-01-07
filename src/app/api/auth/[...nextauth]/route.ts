@@ -44,7 +44,7 @@ export const authOptions: AuthOptions = {
   session: { strategy: "jwt" },
   callbacks: {
     async session({ session, token, user }) {
-      console.log(session, token, user, "session");
+
       //   const sanitizedToken = Object.keys(token).reduce((p, c) => {
       //     // strip unnecessary properties
       //     if (c !== "iat" && c !== "exp" && c !== "jti" && c !== "apiToken") {

@@ -3,6 +3,11 @@ const nextConfig = {
   async rewrites() {
     return [
       {
+        source: '/',
+        destination: '/index'
+      },
+
+      {
         source: "/uyelik",
         destination: "/login",
       },
@@ -14,6 +19,10 @@ const nextConfig = {
         source: "/kurumsal-uye-ol",
         destination: "/company-register",
       },
+      {
+        source: '/hesabim/bilgilerim',
+        destination: '/profile',
+      }
     ];
   },
 };

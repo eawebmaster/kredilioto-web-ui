@@ -24,7 +24,6 @@ export default async function RootLayout({
     <html lang="en">
       <body>
         <Provider session={session}>
-          <Header />
           {children}
         </Provider>
       </body>

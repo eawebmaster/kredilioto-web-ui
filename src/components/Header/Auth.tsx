@@ -18,7 +18,7 @@ const Auth = () => {
         href="/uyelik"
         className="font-bold text-[12px] text-[#484848] hover:text-red"
       >
-        {JSON.stringify(session)}
+        Üye Girişi
       </Link>
       <span>/</span>
       <Link

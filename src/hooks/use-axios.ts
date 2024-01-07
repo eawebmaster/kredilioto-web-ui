@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosInterceptorInstance = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_BACKEND_API_URL, // Replace with your API base URL
+  baseURL: process.env.NEXT_PUBLIC_BACKEND_API_URL + '/api', // Replace with your API base URL
 });
 
 axiosInterceptorInstance.interceptors.response.use(
